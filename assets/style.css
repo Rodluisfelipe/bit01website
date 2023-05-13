@@ -24,6 +24,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 #menu-mobile{
     
@@ -154,9 +155,9 @@ nav {
 
 #section-nos-conoces{
     background: url(../assets/bgSectionTwo.png) ;
-    background-size:contain  ;
     width: 100%;
-    height: 450px;
+    height: 100%;
+    padding: 40px 0;
 
 }
 #section-nos-conoces #title-section-2{
@@ -199,7 +200,9 @@ nav {
     margin-top: 40px;
 }
 #section-our-clients{
+    display: block;
     width: 100%;
+    margin-top: 200px;
 }
 #title-section-3{
     font-size: 30px;
@@ -255,13 +258,26 @@ nav {
   #section-contacto{
     width: 100%;
     background: url(../assets/bgHome.jpg) ;
+    height: 100%;
+    padding:30px 0;
+  }
+  #title-contact{
+    font-size: 30px;
+    width: 80%;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    padding-top: 20px;
+    text-align:left;
   }
   #contact-form{
     background-color: rgb(255, 255, 255);
     border-radius: 10px 10px 10px 10px;
     padding-left: 10px; ;
 
-    margin: auto;
+    margin:  auto;
     width: 80%;
   }
   #contact-form label{
