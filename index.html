@@ -1,14 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" href="assets/faviconGlobant.png" />
+    <title>Globant - Revolución</title>
+  </head>
+  <body>
     <header>
-        
+      <nav>
+        <figure>
+          <img
+            id="logoGlobantHome"
+            src="assets/globant-logo-dark.svg"
+            alt="logo Globant"
+          />
+        </figure>
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <img id="menu-mobile" src="assets/bars-solid.svg" alt="" />
+        </label>
+        <ul class="nav-menu">
+          <li><a class="active" href="index.php">Inicio</a></li>
+          <li><a href="index.php?action=about">Acerca de</a></li>
+          <li><a href="index.php?action=services">Servicios</a></li>
+          <li><a href="index.php?action=contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
-</body>
+
+    <div id="section-home">
+      <h1>Globant</h1>
+      <p>Estamos cambiando el mundo un paso a la vez.</p>
+      <div id="button-home">
+        <a class="button-1" href="#title-section">Explorar</a>
+      </div>
+    </div>
+
+    <div id="section-news">
+      <h2 id="title-section">Noticias</h2>
+      <div class="news-card">
+        <img src="assets/noticiaUno.png" alt="" />
+        <h2 class="title-new">COMUNICADO DE PRENSA</h2>
+
+        <p class="text-new">
+          Globant presenta un asistente de inteligencia artificial de vanguardia
+          para construir productos digitales a partir de notas escritas
+        </p>
+      </div>
+      <div class="news-card">
+        <img src="assets/noticiaDos.jpg" alt="" />
+        <h2 class="title-new">2023 TRENDS REPORT</h2>
+        <p class="text-new">Prosperando en un mundo rápidamente cambiante</p>
+      </div>
+      <div class="news-card">
+        <img src="assets/noticiaTres.jpg" alt="" />
+        <h2 class="title-new">WOMEN THAT BUILD AWARDS</h2>
+        <p class="text-new">
+          Globant lanza la cuarta edición de los Women that Build Awards 2023
+        </p>
+      </div>
+      <div class="news-card">
+        <img src="assets/noticiaCuatro.jpg" alt="" />
+        <h2 class="title-new">DESCUBRE AUGOOR</h2>
+        <p class="text-new">
+          Multiplica tu producción de código con nuestra plataforma de Code
+          Intelligence potenciada por IA
+        </p>
+      </div>
+    </div>
+    <div id="section-nos-conoces">
+      <h2 id="title-section-2">Nos conoces, aunque no nos conozcas.</h2>
+      <p id="text-section-2">
+        Innovación digital en el sector bancario. Entretenimiento. Comercio.
+        Salud. Turismo. Sin importar tu sector, los equipos de consultoría y
+        tecnología de Globant están listos para ayudarte, desplegando su
+        profunda experiencia para impulsar los negocios que transforman al
+        mundo.
+      </p>
+      <ul id="list-section-2">
+        <li>
+          Integramos las poderosas capacidades de la IA para crear valor
+          estratégico en tu negocio
+        </li>
+        <li>Maximizamos tu productividad y rendimiento tecnológico</li>
+        <li>Optimizamos tu agilidad y adaptabilidad en el mercado</li>
+        <li>
+          Innovamos productos digitales para liberar todo el potencial de tu
+          negocio
+        </li>
+      </ul>
+      <a id="button-2" href="">Mira lo que podemos hacer por ti</a>
+    </div>
+    <div id="section-our-clients">
+      <h2 id="title-section-3">Nuestros clientes</h2>
+      <p id="text-section-3">
+        Trabajamos con algunas de las marcas más importantes del mundo para
+        ayudarlas a transformar sus negocios y a construir productos
+        innovadores.
+      </p>
+    </div>
+    <div class="scroll-wrapper">
+      <div class="scroll-container">
+        <img src="assets/logoNissan.svg" />
+        <img src="assets/logoCocaCola.svg" />
+        <img src="assets/logoLinkedin.svg" />
+        <img src="assets/logoGoogle.svg" />
+        <img src="assets/logoFox.svg" />
+        <img src="assets/logoEa.svg" />
+        <img src="assets/logoUnilever.svg" />
+      </div>
+    </div>
+    <div id="section-contacto" >
+      <h2 id="title-contact">Dinos como podemos ayudarte</h2>
+      <form id="contact-form" action="">
+        <fieldset>
+          <label for="objetivo" requi>Tu reto/objetivo <span id="required">*</span>
+            <input class="input-contact" id="objetivo" type="text" required/>
+          </label>
+          <label for="">Nombre<span id="required">*</span>
+            <input class="input-contact" id="name" type="text" required />
+          </label>
+          <label for="">Apellido<span id="required">*</span>
+            <input class="input-contact" type="text" required />
+          </label>
+          <label for="">Correo electrónico<span id="required">*</span>
+            <input class="input-contact" type="email" required />
+          </label>
+          <label for="">Compañía
+            <input class="input-contact" type="text" />
+          </label>
+          <label for="">pais<span id="required">*</span>
+           <select name="country" id="country" required>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="mexico">Mexico</option>
+                <option value="peru">Peru</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="venezuela">Venezuela</option>
+           </select>
+          </label>
+          <label for=""> Acepto terminos y condiciones
+            <input class="input-contact" id="agree-terms" type="checkbox" />
+          </label>
+          <button type="submit" id="contact-submit">Empezar a reinventar</button>
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      <p>&copy; 2023 Globant</p>
+    </footer>
+  </body>
 </html>
