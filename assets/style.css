@@ -101,8 +101,6 @@ nav {
 }
 
 #section-news{
-    
-    width: 100%;
     margin: auto;
     
 }
@@ -154,7 +152,9 @@ nav {
 }
 
 #section-nos-conoces{
-    background: url(../assets/bgSectionTwo.png) ;
+    background: url(../assets/bgNosConoces.jpg) ;
+    background-size:cover ;
+    
     width: 100%;
     height: 100%;
     padding: 40px 0;
@@ -166,7 +166,7 @@ nav {
     font-weight: 600;
     margin: auto;
     margin-bottom: 10px;
-    color: #000000;
+    color: #ffffff;
     padding-top: 20px;
     text-align: center;
 }
@@ -176,7 +176,7 @@ nav {
     font-weight: 400;
     margin: auto;
     margin-bottom: 20px;
-    color: #000000;
+    color: #ffffff;
     padding-top: 10px;
     text-align: center;
 }
@@ -184,7 +184,10 @@ nav {
     width: 80%;
     margin: auto;
     list-style: disc;
-    margin-bottom: 40px;
+    margin-bottom: 40px;}
+#section-nos-conoces ul li{
+       color: #fff;
+       margin-bottom: 5px;
 }
 #button-2 {
     text-align: center;
@@ -193,7 +196,8 @@ nav {
     margin: auto;
     color: rgb(255, 255, 255);
     padding: 15px 40px;
-    background-color: rgb(113, 175, 80,.90);
+    background-color: rgba(92, 167, 52, 0.9);
+    box-shadow: #000000  -10px 10px 40px 10px ;
     border-radius: 20px;
     font-size: 15px;
     font-weight: 600;
@@ -331,3 +335,119 @@ nav {
     font-weight: 600;
   }
 
+
+  /* Responsive desktop */
+  @media screen and (min-width: 768px) {
+    nav{
+        height: 70px;
+        
+    }
+    #bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    .nav-menu li a{
+        color: #000000;
+        font-size: 18px;
+       
+    }
+    #section-home{
+        background-size:cover;
+        height: 52vh;
+    }
+    #section-home h1{
+        margin-top:30px ;
+        font-size: 80px;
+        margin-bottom: 40px;
+    }
+    #section-home p{
+        overflow: hidden;
+        margin: 0px 30%;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    #button-home{
+        height: 80px;
+        margin-top: 60px;
+    }
+    .button-1{
+        margin-top: 70px;
+        padding: 15px 80px;
+        background-color: #fff;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    #section-news #title-section{
+        width: 100%;
+        margin-top: 20px;
+        height: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+        scroll-margin-top:70px ;
+    }
+    #section-news{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 75%;
+        margin-bottom: 40px;
+    }
+    .news-card{
+        margin-top: 40px;
+        width: 35%;
+        height: 300px;
+        background: #fff;
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(113, 175, 80,.90);
+        transition: all .3s;
+        margin-bottom: 40px;
+    }
+    .news-card img{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .title-new{
+        margin-left: 10px;
+        text-align: left;
+        padding-top: 7px;
+        font-size: 16px;
+        margin-right: 10px;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .text-new{
+        text-align: left;
+        padding-top: 7px;
+        font-size: 13px;
+        margin-right: 10px; 
+        margin-left: 10px;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+  }
+    
+  
