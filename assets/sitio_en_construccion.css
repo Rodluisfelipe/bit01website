@@ -1,0 +1,59 @@
+
+.main {
+    background: linear-gradient(to right, rgb(255, 187, 0), rgb(245, 54, 7), rgb(4, 255, 0), rgb(255, 140, 0), rgb(0, 255, 85));
+    background-size: 800% 100%;
+    animation: rainbow 10s linear infinite;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  .main h2 {
+    color: white;
+    font-weight: 900;
+  }
+  
+  .main p {
+    font-size: 1.5rem;
+    color: white;
+  }
+  @media screen and (min-width: 768px) {
+    
+.main {
+    background: linear-gradient(to right, rgb(255, 187, 0), rgb(245, 54, 7), rgb(4, 255, 0), rgb(255, 140, 0), rgb(0, 255, 85));
+    background-size: 800% 100%;
+    animation: rainbow 10s linear infinite;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  .main h2 {
+    font-size: 80px;
+    color: white;
+    font-weight: 900;
+  }
+  
+  .main p {
+    font-size: 1.5rem;
+    color: white;
+  }
+  }
