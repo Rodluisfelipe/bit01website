@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="icon" href="assets/faviconGlobant.png" />
     <title>Globant - Revolución</title>
+    
   </head>
   <body>
     <header>
@@ -21,7 +22,7 @@
         </figure>
         <input type="checkbox" id="check" />
         <label for="check" id="bar-btn">
-          <img id="menu-mobile" src="assets/bars-solid.svg" alt="" />
+          <img id="menu-mobile" src="assets/bars-solid.svg" alt="menu" />
         </label>
         <ul class="nav-menu">
           <li><a class="active" href="index.html">Inicio</a></li>
@@ -48,7 +49,7 @@
     <div id="section-news">
       <h2 id="title-section">Noticias</h2>
       <div class="news-card">
-        <img src="assets/noticiaUno.png" alt="" />
+        <img src="assets/noticiaUno.png" alt="noticia uno" />
         <h2 class="title-new">COMUNICADO DE PRENSA</h2>
 
         <p class="text-new">
@@ -57,19 +58,19 @@
         </p>
       </div>
       <div class="news-card">
-        <img src="assets/noticiaDos.jpg" alt="" />
+        <img src="assets/noticiaDos.jpg" alt="noticia dos" />
         <h2 class="title-new">2023 TRENDS REPORT</h2>
         <p class="text-new">Prosperando en un mundo rápidamente cambiante</p>
       </div>
       <div class="news-card">
-        <img src="assets/noticiaTres.jpg" alt="" />
+        <img src="assets/noticiaTres.jpg" alt="noticia tres" />
         <h2 class="title-new">WOMEN THAT BUILD AWARDS</h2>
         <p class="text-new">
           Globant lanza la cuarta edición de los Women that Build Awards 2023
         </p>
       </div>
       <div class="news-card">
-        <img src="assets/noticiaCuatro.jpg" alt="" />
+        <img src="assets/noticiaCuatro.jpg" alt="noticia cuatro" />
         <h2 class="title-new">DESCUBRE AUGOOR</h2>
         <p class="text-new">
           Multiplica tu producción de código con nuestra plataforma de Code
@@ -110,69 +111,105 @@
     </div>
     <div class="scroll-wrapper">
       <div class="scroll-container">
-        <img src="assets/logoNissan.svg" />
-        <img src="assets/logoCocaCola.svg" />
-        <img src="assets/logoLinkedin.svg" />
-        <img src="assets/logoGoogle.svg" />
-        <img src="assets/logoFox.svg" />
-        <img src="assets/logoEa.svg" />
-        <img src="assets/logoUnilever.svg" />
+        <img src="assets/logoNissan.svg" alt="logo nissan" />
+        <img src="assets/logoCocaCola.svg" alt="logo coca cola" />
+        <img src="assets/logoLinkedin.svg" alt="logo linkedin" />
+        <img src="assets/logoGoogle.svg" alt="logo google" />
+        <img src="assets/logoFox.svg" alt="logo fox" />
+        <img src="assets/logoEa.svg" alt="logo ea" />
+        <img src="assets/logoUnilever.svg" alt="logo unilever" />
       </div>
     </div>
-    <div id="section-contacto" >
+    <div id="section-contacto">
       <h2 id="title-contact">Dinos como podemos ayudarte</h2>
       <form id="contact-form" action="">
         <fieldset>
-          <label for="objetivo" requi>Tu reto/objetivo <span id="required">*</span>
-            <input class="input-contact" id="objetivo" type="text" required/>
+          <label for="objetivo" 
+            >Tu reto/objetivo <span id="required">*</span>
+            <input class="input-contact" id="objetivo" type="text" required />
           </label>
-          <label for="">Nombre<span id="required">*</span>
-            <input class="input-contact" id="name" type="text" required />
+          <label for=""
+            >Nombre<span id="required">*</span>
+            <input class="input-contact" id="name" type="text"  required/>
           </label>
-          <label for="">Apellido<span id="required">*</span>
-            <input class="input-contact" type="text" required />
+          <label for=""
+            >Apellido<span id="required">*</span>
+            <input class="input-contact" id="apellido" type="text"  required/>
           </label>
-          <label for="">Correo electrónico<span id="required">*</span>
-            <input class="input-contact" type="email" required />
+          <label for=""
+            >Correo electrónico<span id="required">*</span>
+            <input class="input-contact" type="email" id="email" required />
           </label>
-          <label for="">Compañía
-            <input class="input-contact" type="text" />
+          <label for=""
+            >Compañía
+            <input class="input-contact" id="compania" type="text" required />
           </label>
-          <label for="">pais<span id="required">*</span>
-           <select name="country" id="country" required>
-                <option value="argentina">Argentina</option>
-                <option value="brasil">Brasil</option>
-                <option value="chile">Chile</option>
-                <option value="colombia">Colombia</option>
-                <option value="mexico">Mexico</option>
-                <option value="peru">Peru</option>
-                <option value="uruguay">Uruguay</option>
-                <option value="venezuela">Venezuela</option>
-           </select>
+          <label for=""
+            >pais<span id="required">*</span>
+            <select name="country" id="country" required >
+              <option value="argentina">Argentina</option>
+              <option value="brasil">Brasil</option>
+              <option value="chile">Chile</option>
+              <option value="colombia">Colombia</option>
+              <option value="mexico">Mexico</option>
+              <option value="peru">Peru</option>
+              <option value="uruguay">Uruguay</option>
+              <option value="venezuela">Venezuela</option>
+            </select>
           </label>
-          <label for=""> Acepto terminos y condiciones
-            <input class="input-contact" id="agree-terms" type="checkbox" />
+          <label for="" >
+            Acepto terminos y condiciones
+            <input class="input-contact" id="agree-terms" type="checkbox" required/>
           </label>
-          <button type="submit" id="contact-submit">Empezar a reinventar</button>
+          <button type="submit" id="contact-submit">
+            Empezar a reinventar
+          </button>
         </fieldset>
       </form>
     </div>
     <footer>
-       <div id="footer-section">
+      <div id="footer-section">
         <figure>
-            <img src="assets/globant-light-bg-color@2x (2).png" alt="" />
-            <figcaption>&copy; Todos los derechos reservados Globant 2023</figcaption>
+          <img
+            src="assets/globant-light-bg-color@2x (2).png"
+            alt="background globant"
+          />
+          <figcaption>
+            &copy; Todos los derechos reservados Globant 2023
+          </figcaption>
         </figure>
-       </div>
+      </div>
 
-       <div id="social-footer">Siguenos en redes sociales
+      <div id="social-footer">
+        Siguenos en redes sociales
         <div id="social-icons">
-            <a href="https://www.facebook.com/Globant"><img  class="social-icons-all" src="assets/facebook.svg" alt="" /></a>
-            <a href="https://twitter.com/globant"><img  class="social-icons-all" src="assets/twitter.svg" alt="" /></a>
-            <a href="https://www.instagram.com/globant/"><img  class="social-icons-all" src="assets/instagram.svg" alt="" /></a>
-            <a href="https://www.linkedin.com/company/globant/?original_referer="><img  class="social-icons-all" src="assets/linkedin.svg" alt="" /></a>
+          <a href="https://www.facebook.com/Globant"
+            ><img
+              class="social-icons-all"
+              src="assets/facebook.svg"
+              alt="logo facebook"
+          /></a>
+          <a href="https://twitter.com/globant"
+            ><img
+              class="social-icons-all"
+              src="assets/twitter.svg"
+              alt="logo twitter"
+          /></a>
+          <a href="https://www.instagram.com/globant/"
+            ><img
+              class="social-icons-all"
+              src="assets/instagram.svg"
+              alt="logo instagram"
+          /></a>
+          <a href="https://www.linkedin.com/company/globant/?original_referer="
+            ><img
+              class="social-icons-all"
+              src="assets/linkedin.svg"
+              alt="logo linkedin"
+          /></a>
         </div>
-    </div>
+      </div>
     </footer>
+    <script src="assets/scripts/main.js"></script>
   </body>
 </html>
